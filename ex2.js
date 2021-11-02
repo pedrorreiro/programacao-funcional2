@@ -42,6 +42,10 @@ const arr = [-1, 50, 5, 10, -8, 20, 25, 0, 100, 14, -123];
 
 // ExercÃ­cio 1: use map() para transformar 'arr' em objetos usando mapToNumberObject()
 
+arr.map(num => {
+    console.log(mapToNumberObject(num));
+})
+
 // ExercÃ­cio 2: seguindo o modelo das 2 primeiras funÃ§Ãµes implemente as outras 4 funÃ§Ãµes
 
 // ExercÃ­cio 3: refatore todas as funÃ§Ãµes para a forma usando arrow function (=>)
