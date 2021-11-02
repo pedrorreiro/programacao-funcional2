@@ -13,19 +13,25 @@ function positive(number) {
 }
 
 function isOdd(number) {
-    // Implementar
+    const n = R.clone(number);
+    n.even = n.value % 2 != 0;
+    return n;
 }
 
 function negative(number) {
-    // Implementar
+    const n = R.clone(number);
+    n.negative = n.value < 0;
+    return n;
 }
 
 function isZero(number) {
-    // Implementar
+    const n = R.clone(number);
+    n.zero = n.value == 0;
+    return n;
 }
 
 function isPrime(number) {
-    // Implementar
+   
 }
 
 function mapToNumberObject(num) {
