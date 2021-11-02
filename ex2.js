@@ -53,4 +53,10 @@ arr.map(num => {
 // ExercÃ­cio 4: use R.pipe para compor as funÃ§Ãµes: isEven, positive, isOdd, negative, 
     // isZero, e isPrime. Teste a funÃ§Ã£o composta com um Ãºnico objeto.
 
+    const pipeFunctions = R.pipe(isEven, positive, isOdd, negative, isZero, isPrime);
+
+    num = {value: 5}
+
+    console.log(pipeFunctions(num.value));
+
 // ExercÃ­cio 5: use a funÃ§Ã£o composta do Ex. 4 para transformar os nÃºmeros em 'arr'
